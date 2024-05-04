@@ -40,7 +40,7 @@ class TaskController extends AbstractController
     #[Route('/tasks', methods: ['GET'])]
     public function getTasks(): Response
     {
-        $tasks = $this->entityManager->getRepository(Task::class)->findBy([], ['completed' => 'ASC']);
+        $tasks = $this->entityManager->getRepository(Task::class)->findAll();
 
         $tasksArray = array_map(function ($task) {
             return [
