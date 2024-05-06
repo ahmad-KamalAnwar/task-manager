@@ -178,6 +178,7 @@
       <parameter key="allow_methods" type="collection">
         <parameter>GET</parameter>
         <parameter>POST</parameter>
+        <parameter>PATCH</parameter>
         <parameter>PUT</parameter>
         <parameter>DELETE</parameter>
         <parameter>OPTIONS</parameter>
